@@ -12,7 +12,7 @@ package day4;
 
 public class BOJ10172 {
     public static void main(String[] args) {
-        // \    /\ 그대로 사용하면 컴파일 오류 발생
+        // ( 0 )"""\ 그대로 사용하면 컴파일 오류 발생
         // "\"를 추가해서 이스케이프 처리를 해야함
         System.out.println("|\\_/|");
         System.out.println("|q p|   /}");
