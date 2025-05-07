@@ -1,5 +1,7 @@
 package day5;
 
+import java.util.Scanner;
+
 // [문제]
 // 연도가 주어졌을 때, 윤년이면 1, 아니면 0을 출력하는 프로그램을 작성하시오.
 // 윤년은 연도가 4의 배수이면서, 100의 배수가 아닐 때 또는 400의 배수일 때이다.
@@ -10,8 +12,6 @@ package day5;
 // 출력 : 첫째 줄에 윤년이면 1, 아니면 0을 출력한다.
 // 예제 입력 : 2000
 // 예제 출력 : 1
-
-import java.util.Scanner;
 
 public class BOJ2753 {
     public static void main(String[] args) {
