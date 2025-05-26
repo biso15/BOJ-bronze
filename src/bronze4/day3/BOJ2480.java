@@ -1,6 +1,5 @@
 package bronze4.day3;
 
-import java.io.*;
 import java.util.Scanner;
 
 // [문제]
@@ -18,7 +17,7 @@ import java.util.Scanner;
 // 예제 출력 : 1300
 
 public class BOJ2480 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int A = sc.nextInt();
         int B = sc.nextInt();

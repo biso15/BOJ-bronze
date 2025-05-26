@@ -1,6 +1,5 @@
 package bronze4.day4;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 // [문제]
@@ -34,7 +33,7 @@ import java.util.Scanner;
 // 예제 출력 : Yes
 
 public class BOJ25304 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int X = sc.nextInt();
         int N = sc.nextInt();
