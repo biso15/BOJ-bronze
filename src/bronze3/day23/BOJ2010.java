@@ -23,6 +23,8 @@ import java.util.Scanner;
 public class BOJ2010 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        // 방법 1
         int N = sc.nextInt();
         int sum = 0;
         for(int i = 0; i < N; i++) {
@@ -34,5 +36,13 @@ public class BOJ2010 {
             }
         }
         System.out.println(sum);
+
+        // 방법 2
+        N = sc.nextInt();
+        sum = 0;
+        for(int i = 0; i < N; i++) {
+            sum += sc.nextInt();
+        }
+        System.out.println(sum - (N - 1));
     }
 }
