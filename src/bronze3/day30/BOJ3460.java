@@ -24,23 +24,17 @@ public class BOJ3460 {
         int T = sc.nextInt();
         for(int i = 0; i < T; i++) {
             int n = sc.nextInt();
-            List<Integer> list = new ArrayList<Integer>();
-            for(int j = 0; j < n;) {
-                if(n / 2 > 0) {
-                    if(n % 2 == 1) {
-                        list.add(1);
-                    } else {
-                        list.add(0);
-                    }
-                    n = n / 2;
+            List<Integer> list = new ArrayList<>();
+            while(true) {
+                if(n % 2 == 1) {
+                    list.add(1);
                 } else {
-                    if(n % 2 == 1) {
-                        list.add(1);
-                    } else {
-                        list.add(0);
-                    }
+                    list.add(0);
+                }
+                if(n / 2 == 0) {
                     break;
                 }
+                n = n / 2;
             }
             for(int j = 0; j < list.size(); j++) {
                 if(list.get(j) == 1) {
