@@ -26,19 +26,19 @@ import java.util.Scanner;
 // 13200
 // 50000
 
- public class BOJ9325 {
-     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
-         int t = sc.nextInt();
-         for(int i = 0; i < t; i++) {
-             int s = sc.nextInt();
-             int n = sc.nextInt();
-             for(int j = 0; j < n; j++) {
-                 int q = sc.nextInt();
-                 int p = sc.nextInt();
-                 s += q * p;
-             }
-             System.out.println(s);
-         }
-     }
- }
+public class BOJ9325 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for(int i = 0; i < t; i++) {
+            int s = sc.nextInt();
+            int n = sc.nextInt();
+            for(int j = 0; j < n; j++) {
+                int q = sc.nextInt();
+                int p = sc.nextInt();
+                s += q * p;
+            }
+            System.out.println(s);
+        }
+    }
+}

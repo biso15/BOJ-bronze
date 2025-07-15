@@ -50,57 +50,57 @@ import java.util.Scanner;
 // 820000
 // 620000
 
- public class BOJ15953 {
-     public static void main(String[] args) {
-         Scanner sc = new Scanner(System.in);
+public class BOJ15953 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-         // 방법 1
-         int T = sc.nextInt();
-         for(int i = 0; i < T; i++) {
-             int a = sc.nextInt();
-             int b = sc.nextInt();
-             int m = 0;
-             if(a == 1) {
-                 m += 5000000;
-             } else if(a >= 2 && a <= 3) {
-                 m += 3000000;
-             } else if(a >= 4 && a <= 6) {
-                 m += 2000000;
-             } else if(a >= 7 && a <= 10) {
-                 m += 500000;
-             } else if(a >= 11 && a <= 15) {
-                 m += 300000;
-             } else if(a >= 16 && a <= 21) {
-                 m += 100000;
-             }
-             if(b == 1) {
-                 m += 5120000;
-             } else if(b >= 2 && b <= 3) {
-                 m += 2560000;
-             } else if(b >= 4 && b <= 7) {
-                 m += 1280000;
-             } else if(b >= 8 && b <= 15) {
-                 m += 640000;
-             } else if(b >= 16 && b <= 31) {
-                 m += 320000;
-             }
-             System.out.println(m);
-         }
+        // 방법 1
+        int T = sc.nextInt();
+        for(int i = 0; i < T; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int m = 0;
+            if(a == 1) {
+                m += 5000000;
+            } else if(a >= 2 && a <= 3) {
+                m += 3000000;
+            } else if(a >= 4 && a <= 6) {
+                m += 2000000;
+            } else if(a >= 7 && a <= 10) {
+                m += 500000;
+            } else if(a >= 11 && a <= 15) {
+                m += 300000;
+            } else if(a >= 16 && a <= 21) {
+                m += 100000;
+            }
+            if(b == 1) {
+                m += 5120000;
+            } else if(b >= 2 && b <= 3) {
+                m += 2560000;
+            } else if(b >= 4 && b <= 7) {
+                m += 1280000;
+            } else if(b >= 8 && b <= 15) {
+                m += 640000;
+            } else if(b >= 16 && b <= 31) {
+                m += 320000;
+            }
+            System.out.println(m);
+        }
 
-         // 방법 2
-         int[] price_1 = {0, 500, 300, 300, 200, 200, 200, 50, 50, 50, 50, 30, 30, 30, 30, 30, 10, 10, 10, 10, 10, 10};
-         int[] price_2 = {0, 512, 256, 256, 128, 128, 128, 128, 64, 64, 64, 64, 64, 64, 64, 64, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32};
-         T = sc.nextInt();
-         for(int i = 0; i < T; i++) {
-             int a = sc.nextInt();
-             int b = sc.nextInt();
-             if(a > 21) {
-                 a = 0;
-             }
-             if(b > 31) {
-                 b = 0;
-             }
-             System.out.println((price_1[a] + price_2[b]) * 10000);
-         }
-     }
- }
+        // 방법 2
+        int[] price_1 = {0, 500, 300, 300, 200, 200, 200, 50, 50, 50, 50, 30, 30, 30, 30, 30, 10, 10, 10, 10, 10, 10};
+        int[] price_2 = {0, 512, 256, 256, 128, 128, 128, 128, 64, 64, 64, 64, 64, 64, 64, 64, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32, 32};
+        T = sc.nextInt();
+        for(int i = 0; i < T; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            if (a > 21) {
+                a = 0;
+            }
+            if (b > 31) {
+                b = 0;
+            }
+            System.out.println((price_1[a] + price_2[b]) * 10000);
+        }
+    }
+}
