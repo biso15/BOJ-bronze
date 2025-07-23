@@ -22,9 +22,9 @@ import java.util.StringTokenizer;
 
 public class BOJ1152 {
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
 
         // 방법 1
+        Scanner sc = new Scanner(System.in);
         String str = sc.nextLine().trim();
         String[] strArr = str.split(" ");
         System.out.println(strArr.length);

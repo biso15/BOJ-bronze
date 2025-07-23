@@ -20,9 +20,9 @@ import java.util.Scanner;
 
 public class BOJ10809 {
     public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
 
         // 방법 1
+        Scanner sc = new Scanner(System.in);
         String S = sc.nextLine();
         int asciiCode = 97;
         while(true) {
