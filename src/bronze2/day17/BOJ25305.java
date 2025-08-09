@@ -1,6 +1,5 @@
 package bronze2.day17;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -23,7 +22,7 @@ import java.util.Scanner;
 // 예제 출력 : 98
 
 public class BOJ25305 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] N = new int[sc.nextInt()];
         int k = sc.nextInt();

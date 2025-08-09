@@ -1,6 +1,5 @@
 package bronze2.day3;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 // [문제]
@@ -29,7 +28,7 @@ import java.util.Scanner;
 // 0
 
 public class BOJ2577 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // 방법 1

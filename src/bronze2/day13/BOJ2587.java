@@ -1,6 +1,5 @@
 package bronze2.day13;
 
-import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -31,7 +30,7 @@ import java.util.Scanner;
 // 30
 
 public class BOJ2587 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int[] arr = new int[5];
         int sum = 0;

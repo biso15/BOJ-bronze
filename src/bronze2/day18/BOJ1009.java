@@ -1,6 +1,5 @@
 package bronze2.day18;
 
-import java.io.IOException;
 import java.math.BigInteger;
 import java.util.Scanner;
 
@@ -31,7 +30,7 @@ import java.util.Scanner;
 // 9
 
 public class BOJ1009 {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         // 방법 1
