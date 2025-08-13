@@ -34,14 +34,14 @@ public class BOJ1076 {
         Scanner sc = new Scanner(System.in);
 
         // 방법 1
-        String[] color = {"black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"};
+        String[] arr = {"black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"};
         String result = "";
         for (int i = 0; i < 3; i++) {
             String resis = sc.nextLine();
-            for (int j = 0; j < color.length; j++) {
-                if (color.equals(color[j])) {
+            for (int j = 0; j < arr.length; j++) {
+                if (resis.equals(arr[j])) {
                     if (i == 2) {
-                        System.out.println(Integer.parseInt(result) * (long) Math.pow(10, j));
+                        System.out.println(Integer.parseInt(result) * (long)Math.pow(10, j));
                         break;
                     }
                     result += j;
@@ -50,6 +50,7 @@ public class BOJ1076 {
         }
 
         // 방법 2
+        String[] color = {"black", "brown", "red", "orange", "yellow", "green", "blue", "violet", "grey", "white"};
         long[] V = {1, 10, 100, 1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000};
         String str = "";
         for(int i = 0; i < 2; i++) {
