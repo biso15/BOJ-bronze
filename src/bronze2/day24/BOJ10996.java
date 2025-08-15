@@ -18,6 +18,8 @@ import java.util.Scanner;
 public class BOJ10996 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        // 방법 1
         int N = sc.nextInt();
         for(int i = 0; i < N; i++) {
             for(int j = 1; j <= N; j++) {
@@ -33,6 +35,19 @@ public class BOJ10996 {
                     System.out.print(" ");
                 } else {
                     System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
+
+        // 방법 2
+        N = sc.nextInt();
+        for(int i = 0; i < 2 * N; i++) {
+            for(int j = 0; j < N; j++) {
+                if((i + j) % 2 == 0) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
                 }
             }
             System.out.println();
